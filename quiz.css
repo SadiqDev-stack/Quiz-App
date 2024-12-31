@@ -1,0 +1,186 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    overflow: hidden;
+    font-family: arial;
+}
+
+html{
+  overflow: hidden;
+}
+
+
+.section{
+  display: none;
+  flex-direction: inherit;
+  position: absolute;
+}
+
+.home,.quizField{
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.title {
+  color: #56FF2B;
+  font-size: 2rem;
+  margin: 2rem;
+  align-self: center
+}
+
+
+.home form{
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 3rem
+}
+
+form input,select{
+  margin-top: .5rem;
+  color: white;
+  border-radius: .5rem;
+  padding: .5rem;
+  outline: none;
+  background: transparent;
+  border: 1px solid #56FF2B;
+  margin-top: 1rem
+}
+
+.takeBtn{
+  width: 80%;
+  padding: .7rem;
+  border-radius: .5rem;
+  border: none;
+  background: #56FF2B;
+  align-self: center;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+
+.msgDisplay{
+  width: 100vw;
+  top: 0;
+  background: #56FF2B;
+  min-height: 20px;
+  z-index: 100;
+  text-align: center;
+  color: black;
+  padding: .3rem;
+  font-size: .8rem;
+  place-content: center;
+  font-weight: bold;
+  opacity: 0;
+  animation: null .5s 0s forwards;
+}
+
+@keyframes show{
+  to{
+    opacity: 1;
+  }
+}
+
+
+.quizField .timer{
+  font-size: 2rem;
+  animation: null 1s 0s infinite ease-in
+}
+
+
+@keyframes tick{
+  34%{
+    color: white;
+    transform: scale(1.2)
+  }68%{
+    color: red;
+    transform:  scale(1.1)
+  }100%{
+    transform: scale(1);
+    color: white;
+  }
+}
+
+.wrapper {
+  margin: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+
+.quizField .end{
+  background: red;
+  border-radius: .5rem;
+  padding: .5rem;
+}
+
+.quizField .question{
+  width: 80%;
+  text-align: center;
+  font-size: 1.2rem;
+  background: #63735F;
+  min-height: 100px;
+  place-content: center;
+  max-height: 200px;
+  overflow-y: scroll;
+  padding: 1.5rem;
+}
+
+.answers{
+  margin: 2rem;
+  overflow-y: scroll;
+  place-items: center;
+  margin-top: 2.5rem;
+  width: 90%;
+}
+
+.answer{
+  background: #FF9D58;
+  padding: .5rem;
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+  color: black;
+  margin: 1rem;
+  align-self: center;
+  border-radius: .5rem;
+  animation: null .5s 0s forwards;
+}
+
+.answer:hover{
+  animation-name: showClicked;
+}
+
+@keyframes showClicked{
+  to{
+    transform: scale(1.1);
+    border: 2px solid white;
+  }
+}
+
+
+.progress{
+  color: #62E159;
+}
+
+.progresses{
+  place-items: center
+}
+
+.progresses *{
+  margin: 4.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 85%;
+  
+}
+

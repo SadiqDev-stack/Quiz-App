@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz App</title>
+  <link rel="shortcut icon" type="image/x-icon" href="icon.png">
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="shortcut icon" type="image/x-icon" href="icon.png">
+</head>
+<body>
+  <div class="msgDisplay">This Is A Message</div>
+
+
+  <div class="home section">
+   <h2 class="title">Quiz App</h2>
+   <form action="" method="post" class="form-api">
+    <label for="trivia_amount">Number of Questions:</label> <input type="number" min="1" max="50" value="10">
+    <br><label for="trivia_category">Select Category: </label> <select name="trivia_category" class="form-control"> <option value="any">Any Category</option> <option value="9">General Knowledge</option><option value="10">Entertainment: Books</option><option value="11">Entertainment: Film</option><option value="12">Entertainment: Music</option><option value="13">Entertainment: Musicals &amp; Theatres</option><option value="14">Entertainment: Television</option><option value="15">Entertainment: Video Games</option><option value="16">Entertainment: Board Games</option><option value="17">Science &amp; Nature</option><option value="18">Science: Computers</option><option value="19">Science: Mathematics</option><option value="20">Mythology</option><option value="21">Sports</option><option value="22">Geography</option><option value="23">History</option><option value="24">Politics</option><option value="25">Art</option><option value="26">Celebrities</option><option value="27">Animals</option><option value="28">Vehicles</option><option value="29">Entertainment: Comics</option><option value="30">Science: Gadgets</option><option value="31">Entertainment: Japanese Anime &amp; Manga</option><option value="32">Entertainment: Cartoon &amp; Animations</option> </select>
+    <br><label for="trivia_difficulty">Select Difficulty: </label> <select name="trivia_difficulty" class="form-control"> <option value="any">Any Difficulty</option> <option value="easy">Easy</option> <option value="medium">Medium</option> <option value="hard">Hard</option> </select>
+    <br><label for="trivia_type">Select Type: </label> <select name="trivia_type" class="form-control">&gt; <option value="any">Any Type</option> <option value="multiple">Multiple Choice</option> <option value="boolean">True / False</option> </select>
+    <br>
+    <button class="takeBtn" class="btn btn-lg btn-primary btn-block" type="submit">Take Quiz</button>
+   </form>
+  </div>
+  
+  <div class="quizField section">
+   <div class="title">
+    Quiz Field
+    </div>
+   <div class="wrapper">
+   <div class="timer">20m ⏱️</div>
+   <div class="end">End Quiz</div>
+   </div>
+   <div class="question">
+    What is computer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ab aut distinctio, aperiam facilis culpa velit mollitia magnam nesciunt quia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam repellat, unde natus voluptas non! Eligendi iure quia facilis dolores voluptate?
+   </div>
+   <div class="answers">
+    <div class="answer">
+     a digital electronic device that process informations
+    </div>
+    <div class="answer">
+     it is a useless gadget
+    </div>
+    <div class="answer">
+     it is a water
+    </div>
+   </div>
+   &copy;Sadiq Dev 
+  </div>
+ 
+ <div class="section progress">
+   <div class="title">Congratulations 💐</div>
+   <div class="progresses">
+     <div class="result">Result: Exellent</div>
+     <div class="score">Scored: 90%</div>
+     <div class="answered">Answered: 90 of 100</div>
+     <div class="recommendation">Keep Up This Your Great Job, One Day You Will Succeed</div>
+     <div>&copy;Sadiq Dev</div>
+   </div>
+   
+ </div>
+ 
+ 
+
+
+<script src="quiz.js"></script>
+
+</body>
+</html>
